@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto",Arial,sans-serif;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618527735_44-p-fon-dota-2-44.jpg);
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url(https://virtus-img.cdnvideo.ru/images/as-is/plain/03/0308d60b-a7f9-4415-83fc-5fb186c03f7b.png);
+}
+
+.bok_right {
+    float: right;
+    height: 2000px;
+    width: 200px;
+}
+
+.bok_left {
+    float: left;
+    height: 2000px;
+    width: 200px;
+}
+
+.main {
+    border: 10px solid #464854;
+    background: #35363F;
+    width: 1000px;
+
+}
+
+.zogolovok {
+    color: #ffffff;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 370px;
+
+}
+
+.sourse {
+    color: #FFF;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight:bold
+}
+
+.abzac_1 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.podzogolovki {
+    color: #FFF;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sait {
+    padding-right: 10px;
+    border: 5px solid red;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 50px;
+    color: #FFF;
+}
+
+.foter {
+    background-color: #2e303d;
+}
+
+.silka {
+    text-decoration: none;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+

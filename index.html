@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source 2: от отмененной Half-Life 3 до новой Counter-Strike. История проблемного движка Valve</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="offset-md-0 col-md-12">
+  
+  <div class="">
+    <div class="main col-md-10 offset-md-1">
+      <header>
+          <div>
+            <h1 class="zogolovok">Source 2</h1>
+            <p class="sourse col-md-4 offset-md-2 ">Source 2: от отмененной Half-Life 3 до новой Counter-Strike. История проблемного движка Valve</p>
+          </div>
+      </header>
+
+      <div>
+        <p class="abzac_1 col-md-8 offset-md-2">Слухи о CS:GO на новом движке продолжают гулять по сети, а спекуляций на эту тему просто огромное количество. Речь о переносе шутера 
+          на Source 2 — внутренний движок Valve, который как будто бы существует давно и при этом остается полной загадкой для большинства геймеров. 
+          Что он собой представляет? Чем отличается от первой версии? И почему игры на нем, по сути, не выходят до сих пор? Cybersport.ru решил 
+          разобраться в истории вопроса, для чего досконально изучил книгу Half-Life: Alyx — The Final Hours, повествующую о создании последней 
+          на сегодня одиночной игры студии. В которой как раз и используется тот самый мифический Source 2.
+        </p>
+      </div>
+
+      <div class=" col-md-8 offset-md-2">
+        <h2 class="podzogolovki ">Мягкий подход</h2>
+        <p class="abzac_1">В 2006 году Valve уже понимала, что у Source есть определенные проблемы, которые невозможно решить в текущей версии движка. Все дело в особенностях работы Source: он использует двоичное разбиение пространства (binary space partitioning, или BSP), которое хорошо работает с простой твердой геометрией вроде офисных строений, но плохо сочетается с живой природой. В отличие от рукотворных предметов, растения и почва все чаще полагаются на меньшее количество углов и прямых стыков, поэтому работать с BSP в таких случаях крайне неудобно.</p>
+        <p class="abzac_1">К 2008-му, когда стартовала разработка Episode 3, команда девелоперов всерьез задумалась о создании нового движка. Основная причина — банальная проблема с поиском инноваций: Half-Life всегда удивляла игроков, но придумать что-то, чего еще не было в серии, и что при этом можно было бы реализовать в рамках Source, становилось все сложнее. В конечном счете часть команды ушла помогать с Left 4 Dead, а программисты остались работать над новым движком. Один из них, Джей Стелли, обозначил подход к созданию геометрии как «полигональный суп»: вместо того чтобы привычно собирать уровни из готовых блоков, Source 2 должен был работать, скорее, как художественная кисть. Первая демоверсия с демонстрацией будущих возможностей была готова уже в 2010-м: площадкой для тестов стала вилла из уровня Swamp Fever для Left 4 Dead 2.</p>
+        <iframe 
+          class="podzogolovki col-md-12 " width="1100" height="800" src="https://www.youtube.com/embed/MbOcveDTHZQ?si=KppbnZkPVeEtOgW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <p class="abzac_1">Результат оказался убедительным, но была и другая сторона вопроса. Дело в том, что девелоперы решили, что работа над движком приоритетнее, чем над новыми играми, и все силы были брошены именно на технологический аспект. Результат — длительная пауза между крупными релизами студии. Valve, по сути, прервала традицию регулярного выпуска игр, которая продержалась с 2005 по 2011 год. Однако основатель студии Гейб Ньюэлл решил идти еще дальше и в конечном счете взялся за идею собственной периферии. Как он отметил в 2012-м, Nintendo добивается высот во многом благодаря тому, что создает не только игры, но и железо, и эта связка нередко позволяет добиваться невероятных высот. Это, впрочем, тема для другого разговора.</p>
+        <h2 class="podzogolovki">Нулевая видимость</h2>
+        <p class="abzac_1">Применить Source 2 по назначению впервые попытались в 2013 году. Тогда началась разработка ролевой игры с незамысловатым кодовым названием RPG. Идея была в том, чтобы выпускать тайтл по частям, со временем добавляя новый функционал, но дальше идеи авторы не ушли. Хотя в какой-то момент RPG едва не стала игрой про Акса — своего рода сюжетной одиночной кампанией для Dota 2. А вот Left 4 Dead 3 добралась до альфа-сборки и на ней остановилась. События триквела должны были разворачиваться в Марокко, а главной фишкой стал бы открытый мир, в котором игроки бы добывали ресурсы для своей базы. Source 2 был к такому не готов: движок перегружался от количества зомби (их должно было быть не просто много, а очень много — разработчики хотели сотни трупов на экране), части базы пропадали, плюс встречались и другие баги. Ошибки были слишком серьезными, чтобы продолжать разработку.</p>
+        <p class="abzac_1">Спустя год в Valve приступили к разработке еще одной игры на Source 2. Она строилась вокруг двух столпов: первый — процедурная генерация, с помощью которой команда хотела добиться высокой реиграбельности; второй — традиционная для Valve более линейная архитектура повествования. Речь, как вы уже догадались, о Half-Life 3. Отмена проекта, над которым работали больше года, состоялась по все той же очевидной причине — сырая технология. На тот момент в Source 2 отсутствовали многие важные технологии вроде освещения и дальности видимости, а тот факт, что сразу три проекта требовали внимания, скорее вредил, чем помогал разработке движка.</p>
+      </div>
+
+      <div id="carouselExampleInterval" class="podzogolovki carousel slide col-md-8 offset-md-2 " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="https://virtus-img.cdnvideo.ru/images/as-is/plain/f2/f23d7adb-d859-429f-bd0a-c2bae2e15a89.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="10000">
+              <img src="https://virtus-img.cdnvideo.ru/images/as-is/plain/e6/e61b583e-c62d-42bf-9752-a99c27e6f619.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+      </div>
+      
+      <div class=" col-md-8 offset-md-2 ">
+        <p class="abzac_1">После ряда экспериментов различной степени удачности первым успехом Source 2 стала Dota 2 Reborn — первый полноценный релиз компании, использующий новый движок. И все же Source 2 не был готов: Valve смогла адаптировать его под конкретные нужды Dota 2, в то время как для других игр он вряд ли бы подошел. Основная проблема была в том, что Valve — полностью горизонтальная компания, в которой нет руководителей и подчиненных, нет четкого плана. По сути, это анархия — казалось бы, рай для разработчиков, которые могут делать всегда только то, что хочется. Но именно из-за этого и начались серьезные проблемы, приведшие к стагнации.</p>
+        <h2 class="podzogolovki">Новая реальность</h2>
+        <iframe class="podzogolovki col-md-12"
+          width="1100" height="800" src="https://www.youtube.com/embed/ASVku-48N8Q?si=-gUmfD3F6L0OrMyp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <p class="abzac_1">Серьезным толчком стал выпуск The Lab — сборника мини-игр о лаборатории Aperture для шлема HTC Vive. Примечательно, что The Lab создана на… Unity: Source 2 все так же оставался в зачаточном состоянии и требовал внимания, однако сама идея VR-игры понравилась многим. К 2016-му идея преобразовалась в «Проект», который должен был изменить Valve.</p>
+        <p class="abzac_1">«Проект» позволил девелоперам покинуть «фронтир» — так в компании называют состояние, когда у команды нет четкого видения проекта. Закрывая глаза, каждый причастный представляет свою игру, мало похожую на то, что творится в голове у другого, — значит, команда находится в дикой местности без карты и ориентиров. «Фронтир». А вот при фразе «Half-Life в виртуальной реальности» все представляют что-то примерно одинаковое. А если есть большая цель и единое видение, можно наконец и движок доработать до нужного состояния. Как оказалось, многие на деле хотели работать не над проектом мечты, а просто над чем-то стоящим. Чем-то, что сможет наконец добраться до релиза.</p>
+        <p class="abzac_1">На основе ассетов Half-Life 2 была создана E1M1 — короткая десятиминутная игра без сюжета, которая должна была показать, как ощущается Half-Life в виртуальной реальности. Здесь уже были все основные составляющие: решение загадок, сражения с монстрами с видом от первого лица, улучшенная физика и многое другое. И если первое время компания не шла дальше идеи сделать небольшое приключение на несколько часов с использованием ассетов Half-Life 2 и ее эпизодов, то со временем идея стала ожидаемо больше. До релиза она добралась как Half-Life: Alyx.</p>
+        <iframe class="col-md-12"
+          width="1100" height="800" src="https://www.youtube.com/embed/O2W0N3uKXmo?si=t7FOvGjsNjuERTsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <p class="abzac_1">В процессе работы над Alyx создавались новые технологии, необходимые для движка. Так, например, в Source 2 появилась симуляция тканей и жидкостей, поведение мягких тел, система мышц для персонажей, физика нового уровня с зашкаливающей интерактивностью, новая система освещения и многое другое. Именно благодаря тому, что у студии наконец появилась конечная цель для работы вместо множества разрозненных проектов, девелоперам удалось довести Source 2 до состояния рабочего движка, способного справляться с разными задачами — а не только узкоспециализированными, как в случае с Dota 2 Reborn.</p>
+        <iframe class="col-md-12"
+          width="1100" height="800" src="https://www.youtube.com/embed/Y0vpqBAi2EA?si=yIaRRntrtMuWf5FJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <p class="abzac_1">Все это открытая информация из интерактивной книги Half-Life: Alyx — Final Hours. С ее выхода прошло два года, и, само собой, многое успело измениться. В финале своих заметок Джефф Кили, автор «Последних часов», подтверждал со слов девелоперов, что Source 2 полностью готов и Alyx — только начало. Разработчики обещали, что больше не боятся Half-Life, которая давила огромным грузом ответственности, и что они вовсю готовы переходить к новым крупным проектам. Два года спустя геймеры так и не дождались новостей по Half-Life, а единственным напоминанием о серьезности намерений служит слух о переносе CS:GO на новый движок. Подтвердится ли?</p>
+        <div>
+          <a class="sait" href="https://www.cybersport.ru/tags/games/source-2-ot-otmenennoi-half-life-3-do-novoi-counter-strike-istoriia-problemnogo-dvizhka-valve?ysclid=lophsc80zt572979764" target="_blank">Информация взята с сайта: </a>
+        </div>
+      </div>   
+      
+  </div>
+
+  <div class="foter">
+    <footer class="offset-md-5 ">
+      <a class="silka" href="https://www.youtube.com/@Valve" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/187/187210.png" alt="">
+      </a>
+      <a class="silka" href="https://steamcommunity.com/profiles/76561199069193371/" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/3670/3670382.png" alt="">
+      </a>
+      <a class="silka" href="https://web.telegram.org/k/#-1941020185" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="">
+      </a>
+    </footer>
+  </div>
+  </div>
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
